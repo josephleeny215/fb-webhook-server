@@ -6,7 +6,7 @@ const VERIFY_TOKEN = process.env.VERIFY_TOKEN || 'sigmaHippo';
 
 app.use(bodyParser.json());
 
- Facebook webhook verification
+// Facebook webhook verification
 app.get('webhook', (req, res) = {
   const mode = req.query['hub.mode'];
   const token = req.query['hub.verify_token'];
