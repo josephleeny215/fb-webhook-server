@@ -1,6 +1,8 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
+const cors = require('cors');
+app.use(cors());  // add this line at the top under express()
 
 const VERIFY_TOKEN = process.env.VERIFY_TOKEN || 'sigmaHippo';
 
