@@ -20,7 +20,7 @@ app.get('/webhook', (req, res) => {
 });
 
 // Facebook sends message events here
-app.post('webhook', (req, res) = {
+app.post('/webhook', (req, res) => {
   console.log('Incoming webhook', JSON.stringify(req.body, null, 2));
   res.sendStatus(200);
 });
