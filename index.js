@@ -2,7 +2,7 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const app = express();
 
-const VERIFY_TOKEN = process.env.VERIFY_TOKEN  'sigmaHippo';
+const VERIFY_TOKEN = process.env.VERIFY_TOKEN || 'sigmaHippo';
 
 app.use(bodyParser.json());
 
